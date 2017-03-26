@@ -1,5 +1,5 @@
 ---
 # Incedo site theme
 
-layout: home
+layout: cv
 ---
