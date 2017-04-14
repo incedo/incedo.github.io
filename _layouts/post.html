@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+{% include main_header.html %}
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+<ul>
+  {% for job in site.jobs %}
+    <li>
+      <a href="{{ job.url }}">{{ job.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+
+{{ content }}
+
+
+{% include main_footer.html %}
+</html>

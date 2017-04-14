@@ -1,5 +1,5 @@
-html { 
-  background: url(/assets/background.jpg) no-repeat center center fixed; 
+html {
+  background: url(/assets/background-jpn.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,18 +8,42 @@ html {
   font-family: $base-font-family;
 }
 
-.header { 
+
+
+form input, form textarea {
+  margin-bottom: 0.5em;
+  width: 600px;
+}
+
+input, textarea {
+    font-size: 0.8em;
+
+    font-family: $base-font-family;
+    border-radius: 2px;
+    border: 1px solid $brand-color-darkbleu;
+    background: $brand-color-bleu;
+    padding: 0.9em;
+    width: 100%;
+}
+
+.formview {
+    width: 100%;
+    margin: 15%;
+    border: 0;
+}
+
+.header {
     width: 100%;
     height: 110px;
     overflow: hidden;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
     background-color: $brand-color-bleu;
     font-family: $base-font-family;
-    border-radius: 5px;
-    opacity: 0.75;
+    border-radius: 2px;
+    opacity: 0.25;
+    clear: both;
 }
 
 .header h1#logo {
@@ -34,4 +58,27 @@ html {
     margin-right:50px;
 }
 
+.content {
+    clear: both;
+    width: 100%;
+	text-align: left;
 
+}
+
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:18px;
+   width:100%;
+
+   z-index: 999;
+   color: $brand-color-darkbleu;
+   background-color: $brand-color-bleu;
+   font-family: $base-font-family;
+   border-radius: 2px;
+   opacity: 0.75;
+
+   text-align: right;
+   clear: both;
+}

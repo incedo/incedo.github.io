@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 {% include main_header.html %}
-{% include contact.html %}
+<div class="content">
+    <div class="formview">    
+        <form method="POST" action="http://formspree.io/info@incedo.nl	">
+        <input name="name" placeholder="Uw naam"> 
+        <input type="email" name="email" placeholder="E-mailadres">
+        <textarea name="message" placeholder="Vraag of opmerking"></textarea>
+        <button type="submit">Send</button>
+        </form>
+    </div>    
+</div>
+
 {% include main_footer.html %}
 </html>
